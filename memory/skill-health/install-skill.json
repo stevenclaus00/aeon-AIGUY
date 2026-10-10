@@ -1,0 +1,18 @@
+{
+  "skill": "install-skill",
+  "last_analyzed": "2026-10-10T03:32:08Z",
+  "quality_score": 2,
+  "assessment": "Honest failure report with no installed pack and no fabricated results, but the output is essentially a blocked-run status message with no substantive work product; the skill's core task (install the epoch pack) did not happen.",
+  "flags": [
+    "empty_output"
+  ],
+  "avg_score": 2,
+  "history": [
+    {
+      "date": "2026-10-10",
+      "score": 2,
+      "ts": "2026-10-10T03:32:08Z",
+      "harness": "claude"
+    }
+  ]
+}
