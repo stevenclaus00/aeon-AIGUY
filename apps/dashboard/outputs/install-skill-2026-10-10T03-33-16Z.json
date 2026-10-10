@@ -1,0 +1,49 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "install-skill"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert",
+        "repo",
+        "howto"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Install did not run",
+        "message": "could not run bin/install-skill-pack for richard7463/aeon-skill-pack-claim-audit (command needs approval in this run).",
+        "type": "warning"
+      }
+    },
+    "repo": {
+      "type": "Text",
+      "props": {
+        "text": "Repo is reachable.",
+        "variant": "body"
+      }
+    },
+    "howto": {
+      "type": "Text",
+      "props": {
+        "text": "Run locally: bin/install-skill-pack richard7463/aeon-skill-pack-claim-audit",
+        "variant": "caption"
+      }
+    }
+  }
+}

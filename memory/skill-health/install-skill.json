@@ -1,17 +1,23 @@
 {
   "skill": "install-skill",
-  "last_analyzed": "2026-10-10T03:32:08Z",
-  "quality_score": 2,
-  "assessment": "Honest failure report with no installed pack and no fabricated results, but the output is essentially a blocked-run status message with no substantive work product; the skill's core task (install the epoch pack) did not happen.",
+  "last_analyzed": "2026-10-10T03:33:16Z",
+  "quality_score": 1,
+  "assessment": "Run produced no install result: the bin/install-skill-pack command was blocked by approval, and the output only asks the operator to run it locally, so no skill was installed.",
   "flags": [
     "empty_output"
   ],
-  "avg_score": 2,
+  "avg_score": 1.5,
   "history": [
     {
       "date": "2026-10-10",
       "score": 2,
       "ts": "2026-10-10T03:32:08Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-10",
+      "score": 1,
+      "ts": "2026-10-10T03:33:16Z",
       "harness": "claude"
     }
   ]
