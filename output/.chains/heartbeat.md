@@ -1,11 +1,14 @@
-HEARTBEAT_OK · STATUS_PAGE=OK. Nothing needs attention, so I sent no notification.
+HEARTBEAT_OK · STATUS_PAGE=OK
 
-- **Skills:** `memory/cron-state.json` shows no failed, stuck or degraded skills. `heartbeat` has 7 of 7 successes, and `install-skill` last succeeded on 2026-10-10.
-- **PRs and issues:** there are no open PRs. One GitHub issue is open, "health: install-skill", but it isn't labeled urgent.
-- **Memory:** `memory/MEMORY.md` has no flagged follow-ups.
-- **Scheduled skills:** `heartbeat` is the only enabled scheduled skill, and it is on time.
+The fleet is healthy, so I sent no notification.
+
+- **P0 (skills):** The only skill in `cron-state.json` with a recent run is heartbeat. It has 8 successes in 8 runs and no failures. `install-skill` last ran on 2026-10-10 with 2 successes in 2 runs. Nothing is failed, stuck or degraded.
+- **P1 (PRs and issues):** No open PRs and no urgent issues.
+- **P2 (memory):** Nothing flagged for follow-up in `memory/MEMORY.md`.
+- **P3 (missing skills):** Heartbeat is the only enabled skill, and it ran on schedule.
+- **Token pulse:** I left the section out because there is no `token-report-*.md` file in `output/articles`.
 
 ## Summary
-- Regenerated `docs/status.md` with overall status 🟢 OK and an updated timestamp. I left out the Token pulse section because there are no token reports.
-- Created `memory/logs/2026-10-17.md` with the heartbeat entry.
+- Regenerated `docs/status.md`: overall 🟢 OK, 0 open issues, heartbeat last run 2026-10-17 08:08 UTC.
+- Created `memory/logs/2026-10-18.md` with the heartbeat entry.
 - No follow-up needed.
