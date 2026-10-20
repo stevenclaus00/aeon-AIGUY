@@ -1,0 +1,64 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat",
+        "description": "Skill run failure report"
+      },
+      "children": [
+        "alert",
+        "failures",
+        "lastFailed",
+        "lastSuccess",
+        "sep",
+        "diagnosis"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "FAILED: heartbeat",
+        "message": "3 consecutive failures (last failed 2026-10-19 09:29 UTC); last success 2026-10-18 08:14 UTC (>36h ago).",
+        "type": "error"
+      }
+    },
+    "failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive failures",
+        "value": "3",
+        "trend": "neutral"
+      }
+    },
+    "lastFailed": {
+      "type": "Text",
+      "props": {
+        "text": "Last failed: 2026-10-19 09:29 UTC",
+        "variant": "body"
+      }
+    },
+    "lastSuccess": {
+      "type": "Text",
+      "props": {
+        "text": "Last success: 2026-10-18 08:14 UTC (>36h ago)",
+        "variant": "body"
+      }
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "diagnosis": {
+      "type": "Text",
+      "props": {
+        "text": "Last error looks like a harness telemetry/JSON dump, not a task error. Check the Actions run logs.",
+        "variant": "muted"
+      }
+    }
+  }
+}
