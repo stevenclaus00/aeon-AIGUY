@@ -1,13 +1,11 @@
-HEARTBEAT_OK · STATUS_PAGE=OK. The fleet is healthy, so I sent no notification.
+HEARTBEAT_OK · STATUS_PAGE=OK
 
-- **Skills:** heartbeat last succeeded 2026-10-26 08:06 UTC, with 0 consecutive failures and an 84% success rate. install-skill has a clean record.
-- **Repo:** there are no open PRs or urgent issues, and no open entries in `memory/issues/INDEX.md`.
-- **Memory:** `memory/MEMORY.md` has nothing flagged for follow-up.
-- **Scheduling:** I skipped the missing-skill check, because heartbeat is the only skill enabled in `aeon.yml`.
-- **Token pulse:** I left that section out, since there are no `token-report` files.
+- **Skills:** Heartbeat last succeeded on 2026-10-27 at 08:01 UTC and has 0 consecutive failures. Its success rate is 85% (17 of 20 runs). The last failure was on 2026-10-19 and it has recovered since. install-skill last succeeded on 2026-10-10.
+- **PRs and issues:** There are no open PRs, no urgent issues, and no open issues in the tracker.
+- **Memory:** Nothing in memory is flagged for follow-up.
+- **Scheduling:** Heartbeat is the only enabled skill, and it has run on schedule. No notification was sent.
 
 ## Summary
-- Rewrote `docs/status.md` with an Overall of 🟢 OK, updated 2026-10-27 08:00 UTC.
-- Added a `### heartbeat` entry to `memory/logs/2026-10-27.md`.
-- I also added a stray blank line to `memory/logs/2026-10-26.md` by mistake. It is harmless.
+- Regenerated `docs/status.md` with an Overall status of 🟢 OK.
+- Created `memory/logs/2026-10-28.md` with the heartbeat entry.
 - No follow-up needed.
