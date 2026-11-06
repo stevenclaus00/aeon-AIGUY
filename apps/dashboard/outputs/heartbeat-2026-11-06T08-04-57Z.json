@@ -1,0 +1,88 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "alert",
+        "sep1",
+        "stats",
+        "sep2",
+        "error",
+        "action"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "🔴 FAILED: heartbeat",
+        "message": "3 consecutive failures (last 2026-11-05 09:15 UTC), last success 2026-11-04 08:17 UTC.",
+        "type": "error"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_failures",
+        "stat_last_failure",
+        "stat_last_success"
+      ]
+    },
+    "stat_failures": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive failures",
+        "value": "3",
+        "trend": "down"
+      }
+    },
+    "stat_last_failure": {
+      "type": "Stat",
+      "props": {
+        "label": "Last failure",
+        "value": "2026-11-05 09:15 UTC"
+      }
+    },
+    "stat_last_success": {
+      "type": "Stat",
+      "props": {
+        "label": "Last success",
+        "value": "2026-11-04 08:17 UTC"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "error": {
+      "type": "Text",
+      "props": {
+        "text": "Error: API 403 `oauth_not_allowed` — the harness OAuth credential is being rejected.",
+        "variant": "body"
+      }
+    },
+    "action": {
+      "type": "Text",
+      "props": {
+        "text": "Check/refresh the Claude auth secret.",
+        "variant": "lead"
+      }
+    }
+  }
+}
