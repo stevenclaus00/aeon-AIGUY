@@ -1,12 +1,11 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-- **Skills:** heartbeat is the only skill with an entry in `memory/cron-state.json`. Its last success was 2026-11-10 08:18 UTC and it has 0 consecutive failures. Its success rate is 83%, from one earlier 403 oauth error on 2026-11-05 that it has since recovered from.
-- **PRs and issues:** there are no open PRs, no urgent issues, and no open entries in `memory/issues/INDEX.md`.
-- **Memory:** nothing in `memory/MEMORY.md` needs follow-up.
-- **Notification:** none sent, since nothing needed attention.
+- **Fleet:** heartbeat is the only enabled skill. Its last success was 2026-11-11 08:09 UTC, with 0 consecutive failures and an 84% success rate.
+- **PRs, issues and memory:** there are no open PRs, no urgent issues and no open memory issues. `memory/MEMORY.md` has nothing flagged for follow-up.
+- **Notification:** none sent, since nothing needs attention.
+- **Token pulse:** the status page has no Token pulse section because no token-report files exist.
 
 ## Summary
-- Updated `docs/status.md`: the Updated timestamp is now 2026-11-11 and the heartbeat last-run row now shows 2026-11-10 08:18 UTC. The status page reads 🟢 OK.
-- Created `memory/logs/2026-11-11.md` with today's heartbeat entry.
-- I also added a stray blank line to the end of `memory/logs/2026-11-10.md`. It doesn't change anything in that log.
+- Regenerated `docs/status.md` with overall status 🟢 OK.
+- Created `memory/logs/2026-11-12.md` with the heartbeat entry.
 - No follow-up needed.
