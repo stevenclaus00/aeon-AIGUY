@@ -1,13 +1,12 @@
-HEARTBEAT_OK · STATUS_PAGE=OK
+HEARTBEAT_OK · STATUS_PAGE=OK. Nothing needs attention, so I sent no notification.
 
-Nothing needs attention, so I sent no notification.
-
-- **Skills:** heartbeat is the only skill in `cron-state.json`. Its last run succeeded on 2026-11-15 at 08:15 UTC and it has 0 consecutive failures. Its success rate is 85%, which is above the 50% bar for chronic failures. `install-skill` also has a state entry (2 runs, both successful), but it isn't enabled in `aeon.yml`, so I left it off the status page.
-- **PRs and issues:** I found no stalled PRs and no urgent issues. `memory/issues/` has no `INDEX.md`, so there are no open issues.
-- **Memory:** `memory/MEMORY.md` has nothing flagged for follow-up.
-- **Token pulse:** I left the section out because there is no `token-report-*.md` file.
+- **P0 (failed or stuck skills):** heartbeat is the only enabled skill. Its last run succeeded on 2026-11-16 with 0 consecutive failures and an 86% success rate (36 of 42 runs). Its last failure was on 2026-11-05 and it has recovered since. `install-skill` also has an entry in `cron-state.json`, but it isn't enabled and its last status was success.
+- **P1 (stalled PRs, urgent issues):** the `gh` calls returned no open PRs and no urgent issues.
+- **P2 (flagged memory items):** `memory/MEMORY.md` has no follow-ups flagged beyond the default setup priorities.
+- **P3 (missing scheduled skills):** nothing missing, since heartbeat's last success is within its daily interval.
+- **Open issues:** 0.
 
 ## Summary
-- Rewrote `docs/status.md`: overall 🟢 OK, updated 2026-11-16, and the heartbeat row now shows its 2026-11-15 08:15 UTC run. The previous page showed an older run time.
-- Created `memory/logs/2026-11-16.md` with the heartbeat entry.
+- Rewrote `docs/status.md` with an Updated time of 2026-11-17 08:00 UTC and the current heartbeat stats. No token reports exist, so it has no Token pulse section.
+- Created `memory/logs/2026-11-17.md` with the heartbeat entry. My first attempt to append it from the shell was refused, so I wrote the file with the Write tool.
 - No follow-up needed.
