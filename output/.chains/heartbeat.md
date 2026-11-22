@@ -1,12 +1,11 @@
-HEARTBEAT_OK · STATUS_PAGE=OK. The fleet is healthy and nothing needed attention, so I sent no notification.
+HEARTBEAT_OK · STATUS_PAGE=OK. Nothing needs attention, so I sent no notification.
 
-- **Skills:** heartbeat last succeeded on 2026-11-20 08:00 UTC and has 0 consecutive failures. Its success rate is 87% (40 of 46 runs), and the last failure was on 2026-11-05. No skill is failed, stuck or missing.
-- **GitHub:** there are no open PRs or urgent issues.
-- **Memory:** `memory/MEMORY.md` has nothing flagged for follow-up.
-- **Issues:** `memory/issues/INDEX.md` has no open issues.
-- **Token pulse:** I left this section out because there is no `token-report` article.
+- **Skills:** heartbeat is the only enabled skill. Its last run succeeded on 2026-11-21 at 08:13 UTC, with 0 consecutive failures and an 87% success rate (41 of 47 runs). Its last failure was on 2026-11-05, and it has recovered since.
+- **PRs and issues:** there are no stalled PRs or urgent issues, and `memory/issues/INDEX.md` has no open issues.
+- **Memory:** nothing in `memory/MEMORY.md` is flagged for follow-up.
+- **Token pulse:** I left this section out because there are no token reports in `output/articles/`.
 
 ## Summary
-- Rewrote `docs/status.md` with the 🟢 OK verdict and the current timestamp.
-- Logged the run to `memory/logs/2026-11-21.md`.
+- Updated `docs/status.md`: the Updated timestamp is now 2026-11-22 08:04 UTC, and heartbeat's last run now reads 2026-11-21 08:13 UTC.
+- Created `memory/logs/2026-11-22.md` with the heartbeat entry.
 - No follow-up needed.
